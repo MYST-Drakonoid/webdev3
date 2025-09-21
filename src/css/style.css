@@ -171,3 +171,139 @@ svg {
   background-color: var(--bs-black);
   fill: white;
 }
+
+
+/* Global header */
+.global-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75em 1em;
+  background-color: var(--bs-black); 
+  color: var(--bs-white);
+}
+
+.global-header h1 {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.global-header__right {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.search-icon,
+#global-nav-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--bs-white);
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25em;
+}
+
+.search-icon:hover,
+#global-nav-toggle:hover {
+  color: var(--bs-cape-honey);
+}
+
+.icon {
+  width: 1.25em;
+  height: 1.25em;
+  fill: currentColor;
+}
+
+/* Hero banner */
+.hero-banner {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.hero-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-banner__content {
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  display: flex;
+  align-items: flex-end;  
+  gap: 0.5em;             
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1em;
+  border-radius: var(--bs-border-radius);
+  color: var(--bs-white);
+  
+}
+
+.hero-banner__title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--bs-cape-honey);
+  margin: 0;
+  padding-bottom: 8pt;
+  text-align: right;
+    color: inherit;         
+  text-decoration: none;   
+  cursor: pointer;        
+}
+
+.hero-banner__title:hover {
+  text-decoration: underline;
+}
+
+.hero-banner__subtitle {
+  font-size: 0.85rem;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.hero-banner__subtitle span {
+  display: block;
+}
+/* Park nav */
+.park-nav {
+  background-color: var(--bs-chathams-blue-4);
+  border-top: 1px solid var(--bs-border-color);
+  border-bottom: 1px solid var(--bs-border-color);
+}
+
+.park-nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0.5em 0;
+}
+
+.park-nav li {
+  flex: 1;
+  text-align: center;
+}
+
+.park-nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--bs-dark);
+  font-size: 0.875rem;
+  text-decoration: none;
+  gap: 0.25em;
+}
+
+.park-nav a:hover {
+  color: var(--bs-chathams-blue-2);
+}
+
+.park-nav .icon {
+  width: 1.5em;
+  height: 1.5em;
+}
